@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'PT_Sans-Web-Bold';
+	src: url('PT_Sans-Web-Bold.ttf');
+	src: local('PT_Sans-Web-Bold'), url('../fonts/PT_Sans-Web-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PT_Sans-Web-BoldItalic';
+	src: url('PT_Sans-Web-BoldItalic.ttf');
+	src: local('PT_Sans-Web-BoldItalic'), url('../fonts/PT_Sans-Web-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PT_Sans-Web-Italic';
+	src: url('PT_Sans-Web-Italic.ttf');
+	src: local('PT_Sans-Web-Italic'), url('../fonts/PT_Sans-Web-Italic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PT_Sans-Web-Regular';
+	src: url('PT_Sans-Web-Regular.ttf');
+	src: local('PT_Sans-Web-Regular'), url('../fonts/PT_Sans-Web-Regular.ttf') format('truetype');
+}
+
+body{
+	background-color: #fcdb00;
+	font-family: 'PT_Sans-Web-Bold'
+}
+footer{
+	background-color: #010101;
+	height: 275px;
+	color: #fff;
+}
+
+.tiny-logo{
+	background: url(../img/tinyone.png)no-repeat;
+	height: 43px;
+	width: 100%
+}
+.tiny-logo h3{
+	margin-left: 56px;
+    line-height: 42px;
+}
+.nav-navbar{
+	float: right;
+}
+.nav-navbar ul{
+	list-style: none;
+}
+.nav-navbar ul li{
+	display: inline-block;
+	padding: 30px;
+}
