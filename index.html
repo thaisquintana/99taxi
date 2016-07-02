@@ -3,6 +3,7 @@
 <head>
 	<html lang="en">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
@@ -31,46 +32,142 @@
 <body>
 	<header>
 		<div class="container">
-			<div class="col-sm-3">
-				<div class="tiny-logo">
-					<h3>tinyone</h3>
+			<div class="row">
+				<div class="col-sm-6 col-md-6">
+					<div class="tiny-logo">
+						<h3>tinyone</h3>
+					</div>
 				</div>
-			</div>
-			<div class="col-sm-3 col-md-9">
-				<div class="nav-navbar">
-					<ul>
-						<li>Features</li>
-						<li>Support</li>
-						<li>Blog</li>
-					</ul>
+				<div class="col-sm-6 col-md-6">
+					<div class="nav-navbar">
+						<ul>
+							<li><a>Features</a></li>
+							<li><a>Support</a></li>
+							<li><a>Blog</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 	</header>
-	<div class="container">
-		<div class="col-sm-3 col-md-9">
-			<div class="content">
-				<h2>Inspire your inspiration</h2>
-				<div>
-					<p>Simple to use for your app, products showcase and your inspiration</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit </p>
+	<section class="main-context">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-6">
+					<div class="content">
+						<h2>Inspire your inspiration</h2>
+						<div  class="title">
+							<p>Simple to use for your app, products showcase and your inspiration</p>
+						</div>
+						<div  class="sub-text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit </p>
+						</div>
+						<div class="devices">
+							<i class="fa fa-apple" aria-hidden="true"></i>
+							<i class="fa fa-android" aria-hidden="true"></i>
+							<i class="fa fa-windows" aria-hidden="true"></i>
+						</div>
+					</div>
 				</div>
-				<div>
-					<i class="fa fa-apple" aria-hidden="true"></i>
-					<i class="fa fa-android" aria-hidden="true"></i>
-					<i class="fa fa-windows" aria-hidden="true"></i>
+				<div class="col-sm-6 col-md-6">
+					<div class="form-content">
+						<div class="ftitle">
+							<p>Fill the Form below to recieve more information about our app!</p>
+						</div>
+					</div>
+					<div class="formApp">
+						<form>
+						  <div class="form-group">
+						    <input type="text" class="form-control" id="nomeID" placeholder="Nome">
+						  </div>
+						  <div class="form-group">
+						    <input type="email" class="form-control" id="emailID" placeholder="Email">
+						  </div>
+						  <div class="form-group">
+						    <input type="text" class="form-control" id="telefoneID" placeholder="Telefone">
+						  </div>
+						  <button type="submit" class="btn btn-default">Enviar</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 	<footer>
 		<div class="container">
-			<div class="col-sm-3 col-md-9">
-				<p>HALOVIETNAM LTD</p>
-				<br>
-				<p>66, Dang Van ngu, Dong Da</p>
-				<br>
-				<p>Hanoi, Vietnam</p>
+			<div class="row">
+				<div class="main-footer">
+					<div class="col-md-12">
+						<div class="col-sm-4 col-md-3">
+							<ul class="footer-contact">
+								<li>
+									HALOVIETNAM LTD<br>66, Dang Van ngu, Dong Da<br> Hanoi, Vietnam
+								</li>
+								<li>
+									contact@halovietnam.com
+								</li>
+								<li>
+									+844 35149182
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-2 col-md-2">
+							<ul class="footer-links">
+								<li>
+									Examples
+								</li>
+								<li>
+									Shops
+								</li>	
+								<li>
+									License
+								</li>		
+							</ul>
+						</div>
+						<div class="col-sm-2 col-md-2">
+							<ul class="footer-links">
+								<li>
+									Contact
+								</li>
+								<li>
+									About
+								</li>
+								<li>
+									Privacy
+								</li>
+								<li>
+									Terms
+								</li>			
+							</ul>
+						</div>
+						<div class="col-sm-2 col-md-2">
+							<ul class="footer-links">
+								<li>
+									Download
+								</li>
+								<li>
+									Support
+								</li>
+								<li>
+									Documents
+								</li>	
+							</ul>
+						</div>
+						<div class="col-sm-2 col-md-3">
+							<ul class="footer-links">
+								<li>
+									Media
+								</li>
+								<li>
+									Blog
+								</li>
+								<li>
+									Forums
+								</li>		
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>
