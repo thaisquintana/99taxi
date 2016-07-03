@@ -19,28 +19,24 @@
 	src: local('PT_Sans-Web-Regular'), url('../fonts/PT_Sans-Web-Regular.ttf') format('truetype');
 }
 // media queries
-@mixin phone{
-	@media screen and (min-width:400px){
-		@content;
-	}
-}
+
 @mixin tablet{
-	@media screen and (min-width:600px){
+	@media screen and (min-width:768px){
 		@content;
 	}
 }
 @mixin landscape{
-	@media screen and (min-width:900px){
+	@media screen and (min-width:992px){
 		@content;
 	}
 }
 @mixin desktop{
-	@media screen and (min-width:1024px){
+	@media screen and (min-width:1200px){
 		@content;
 	}
 }
-@mixin larger{
-	@media screen and (min-width:1274px){
+@mixin largerdesk{
+	@media screen and (min-width:1900px){
 		@content;
 	}
 }
@@ -52,40 +48,32 @@ body{
 
 .tiny-logo{
 	cursor:pointer;
-	background: url(../img/tinyone.png)no-repeat;
 	height: 43px;
-	width: 100%;
-	h3 {
-		margin-left: 56px;
-	    line-height: 42px;
+	img{
+		width: auto;
+		position: relative;
+    	bottom: 3px;
+    	margin-right: 10px;
 	}
-	@include phone{
-		background-position: 32% 75%;
-		margin-right:20px;
-		h3{
-			margin-left:52px;
-			text-align:center;
-		}
+	h3 {
+		text-align:center;
 	}
 	@include tablet{
-		background-position: 40% 75%;
-	}
-	@include landscape{
-		background-position: left;
-		h3{
-			margin-left:58px;
+		h3 {
 			text-align:left;
 		}
 	}
 }
 .nav-navbar{
-	float: right;
+	text-align:center;
 	ul {
 		list-style: none;
+		padding-left:0;
 	}
 	ul li {
 		display: inline-block;
-		padding:22px;		
+		padding:19px;	
+		margin-top:10px;	
 	}
 	a{
 		font-size:1.37em;
@@ -99,36 +87,21 @@ body{
 		color:#fff;
 		cursor:pointer;
 	}
-	@include phone{
-		float:left;
-		ul{
-			padding-left:0;
-		}
-		ul li{
-			padding:19px;
-			margin-top:10px;
-		}
-	}
 	@include tablet{
-		ul{
-			padding-left: 100px;
-		}
+		text-align: right;
+    	font-size: 0.8em;
+    	ul li:last-child{
+			padding-right:0;
+		} 
 	}
-	@include landscape{
-		float:right;
-		ul{
-			padding-left:0;
-		}
-		a{
-			font-size:1.2em;
-		}
+	@include desktop{
+    	font-size: 1em;
 	}
 }
 .main-context{
 		.content {
 			font-family:'PT_Sans-Web-Regular';
-			padding-top: 50px;
-			padding-bottom:110px;
+			text-align:center;
 			h2{
 				font-size: 2em;
 				color:#010101;
@@ -149,55 +122,62 @@ body{
 				i{
 					cursor:pointer;
 					color:#010101;
-					padding-right:30px;
+					padding:20px;
+				}
+			}
+			@include tablet{
+				text-align: left;
+				.title p{
+					margin-right: 13px;
+					padding-right: 110px;
+				}
+				.sub-text p{
+					font-size: 1em;
+    				padding-right: 69px;
+				}
+				.devices i:first-child{
+					padding-left: 0;
+				}
+			}
+			@include desktop{
+				h2{
+					font-size: 2.5em;
+				}
+				.title p{
+					font-size: 1.5em;
+    				padding-right: 217px;
+				}
+				.sub-text p{
+					font-size: 1.2em;
+    				padding-right: 153px;
+				}
+			}
+			@include largerdesk{
+				.title p{
+    				padding-right: 132px;
+				}
+				.sub-text p{
+    				padding-right: 132px;
 				}
 			}
 		}
-		@include phone{
-			padding-bottom:20px;
-		 .content{
-		 	padding-top:0;
-		 	padding-bottom:0;
-		 	text-align:center;
-		 	.title p{
-		 		padding-right:0;
-			 }
-			 .sub-text p{
-			 	padding-right: 0;
-			 }
-			 .devices i{
-			 	padding:12px;
-			 }
+		@include tablet{
+			margin-top: 60px;
 		}
 		@include landscape{
-		 	height: 743px;
-		 	.content{
-		 		text-align:left;
-				.sub-text p{
-			 		font-size:0.9em;
-			 	}
-			 	 .devices i{
-			 	 	padding:0 21px 0 0;
-				 }
-		 	}
+			margin-top: 70px;
+			margin-bottom: 39px;
 		}
 		@include desktop{
-			height:350px;
-			.content{
-				.title p{
-				padding-right: 227px;
-				}
-				.sub-text p{
-					padding-right: 211px;
-				}
-			}
-		}
-		@include larger{
-			height:400px;
-		}
+			margin-top: 11px;
+    		margin-bottom: 44px;
+    	}
+		@include largerdesk{
+			margin-top: 50px;
+    		margin-bottom: 90px;
+    	}
 	}
 	.form-content{
-		padding-top: 50px;
 		text-align:center;
 		.ftitle{
 			font-size:1.2em;
@@ -205,11 +185,13 @@ body{
 			padding-top: 26px;
 			font-family:'PT_Sans-Web-Regular';
 		}
-		@include phone{
-			padding-top:0;
-		}
-	 	@include landscape{
+		@include tablet{
 			text-align:left;
+		}
+		@include largerdesk{
+			.ftitle{
+				margin-left: 79px;
+			}
 		}
 	}
 	.formApp{
@@ -217,43 +199,50 @@ body{
     	button{
     		float:right;
     	}
+    	@include largerdesk{
+			margin-left: 78px;
+		}
 	}
-}
+
 
 footer{
 	background-color: #010101;
 	color: #fff;
 	font-family: 'PT_Sans-Web-Regular';
-	@include phone{
-		text-align:center;
-		padding:26px;
-	}
+	padding:26px;
+	text-align:center;
+	margin-top:30px;
 	@include tablet{
-		padding:10px 0;
-	}
-	@include landscape{
+		margin-top: 78px;
+    	height: 367px;
+    	padding:0;
 		text-align:left;
-	}
-	@include desktop{
-		padding:70px 0;
-		li{
-			font-size: 1em;
+
+		.main-footer{
+			margin-top: 52px;
 		}
 	}
-	@include larger{
-		height:532px;
-		padding:84px 0;
+	@include landscape{
+		height: 420px;
+    	padding: 94px;
+	}
+	@include desktop{
+		height: 416px;
+	}
+	@include largerdesk{
+		height:  388px;
+		padding: 60px 0px;
 	}
 	.footer-contact{
 		list-style:none;
 		padding-left:0;
 		padding-top:20px;
+		cursor:pointer;
 	}
 	.footer-links{
 		list-style:none;
-		@include phone{
-			padding-top:20px;
-			padding-left:0;
-		}
+		padding-top:20px;
+		padding-left:0;
+		cursor:pointer;
 	}
 }
