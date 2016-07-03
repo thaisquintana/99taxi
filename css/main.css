@@ -165,7 +165,8 @@ footer {
       padding: 94px; } }
   @media screen and (min-width: 1200px) {
     footer {
-      height: 416px; } }
+      height: 416px;
+      padding: 0; } }
   @media screen and (min-width: 1900px) {
     footer {
       height: 388px;

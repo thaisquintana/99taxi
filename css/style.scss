@@ -228,6 +228,7 @@ footer{
 	}
 	@include desktop{
 		height: 416px;
+		padding:0;
 	}
 	@include largerdesk{
 		height:  388px;
