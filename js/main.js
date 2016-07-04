@@ -17,6 +17,7 @@ $(document).ready(function() {
             dataType:"json",
             success: function() {
 		        $("#sendbox").show();
+		        $('#overlaylight').show();
 		      },
 		      error: function() {
 		        $("#errorbox").show();        
@@ -27,7 +28,16 @@ $(document).ready(function() {
 //Modal 
 $( "#agreed").on( "click", function() {
 	 $('#sendbox').hide();
+	 $('#overlaylight').hide();
+	 $("#nomefield").val("");
+     $("#emailfield").val("");
+     $("#phonefield").val("");
+
 });
 $( ".close").on( "click", function() {
 	 $('#sendbox').hide();
+	 $('#overlaylight').hide();
+	 $("#nomefield").val("");
+     $("#emailfield").val("");
+     $("#phonefield").val("");
 });
