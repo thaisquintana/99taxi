@@ -135,11 +135,24 @@ body {
   @media screen and (min-width: 1900px) {
     .form-content .ftitle {
       margin-left: 79px; } }
+  .form-content .invalid-field {
+    display: none;
+    color: red;
+    margin: 0 .5em 0 0;
+    vertical-align: top;
+    font-size: 1em; }
 
 .formApp {
   padding-top: 10px; }
   .formApp button {
-    float: right; }
+    float: right;
+    color: #fff;
+    border: none;
+    background-color: #010101; }
+  .formApp button:hover {
+    color: #010101;
+    background-color: #fff;
+    border: none; }
   @media screen and (min-width: 1900px) {
     .formApp {
       margin-left: 78px; } }
@@ -181,5 +194,25 @@ footer {
     padding-top: 20px;
     padding-left: 0;
     cursor: pointer; }
+
+#sendbox {
+  display: none; }
+  #sendbox .modal-header {
+    border: none; }
+    #sendbox .modal-header span {
+      float: right;
+      color: #010101;
+      border: none; }
+  #sendbox .modal-body {
+    text-align: center; }
+  #sendbox .modal-footer {
+    border: none; }
+    #sendbox .modal-footer button {
+      background-color: #fcdb00;
+      color: #010101;
+      border: none; }
+    #sendbox .modal-footer button:hover {
+      color: #fff;
+      background-color: #010101; }
 
 /*# sourceMappingURL=main.css.map */
